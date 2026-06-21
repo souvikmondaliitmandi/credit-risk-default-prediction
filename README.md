@@ -1,4 +1,7 @@
 # Credit Risk Default Prediction
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+   ![License](https://img.shields.io/badge/license-MIT-green)
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/souvikmondaliitmandi/credit-risk-default-prediction/blob/main/Credit_Risk_LightGBM_Final.ipynb)
 
 Predicts the probability that a consumer-finance applicant will default within
 12 months, using application, demographic, employment and credit-bureau
