@@ -62,8 +62,7 @@ Top SHAP drivers:
 
 **Consumer Credit Default Prediction | LightGBM, SHAP, Feature Engineering**
 
-- Developed an end-to-end credit risk prediction model on **[FILL IN: number
-  of rows in your actual `train.csv`]** consumer finance applications.
+- Developed an end-to-end credit risk prediction model on 80,000 consumer finance applications.
 - Engineered debt burden, affordability, and declaration-mismatch features
   from application and bureau data.
 - Applied target encoding and trained a LightGBM model achieving **0.6485
