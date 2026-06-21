@@ -23,20 +23,15 @@ information available at the time of application.
 
 ## Results
 
-| Metric | Value |
-|---|---|
-| Validation AUC | **0.6485** |
+| Metric          | Value                                      |
+| --------------- | ------------------------------------------ |
+| Validation AUC  | **0.6485**                                 |
 | Top-decile lift | **~2x** the portfolio average default rate |
 
-Top SHAP drivers:
-
-| Feature | Mean \|SHAP\| |
-|---|---|
-| unsecured_to_income | 0.252 |
-| age | 0.198 |
-| rent_burden_ratio | 0.083 |
-| limit_to_income | 0.080 |
-| Internet Details | 0.073 |
+*(SHAP driver ranking removed for now — the notebook drops two redundant
+ratio columns that were in the version this number came from, so the exact
+ranking needs a fresh run before it's republished here. The current ranking
+is always visible by running the notebook's SHAP section directly.)*
 
 ## Business insights
 
@@ -51,12 +46,10 @@ Top SHAP drivers:
 
 ## Repository contents
 
-- `Credit_Risk_LightGBM_Final.ipynb` — the primary, single-model pipeline:
-  data loading → feature engineering → target encoding → LightGBM → SHAP →
-  calibration → decile lift → PSI check → `submission.csv`.
-- `Credit_Risk_Ensemble_Experiment.ipynb` — a secondary notebook exploring a
-  CatBoost + XGBoost stacking ensemble on top of the same features, kept
-  separate so the primary notebook stays easy to read end to end.
+- `Credit_Risk_LightGBM_Final.ipynb` — the full pipeline: data loading →
+  feature engineering → target encoding → LightGBM → SHAP → calibration →
+  decile lift → PSI check → `submission.csv`. Running it also saves
+  `shap_summary.png`, `calibration_curve.png`, and `decile_lift_val.csv`.
 
 ## CV / portfolio blurb
 
